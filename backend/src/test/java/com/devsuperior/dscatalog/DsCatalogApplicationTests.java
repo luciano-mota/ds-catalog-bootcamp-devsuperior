@@ -9,5 +9,4 @@ class DsCatalogApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
