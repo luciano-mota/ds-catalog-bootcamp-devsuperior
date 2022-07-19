@@ -24,20 +24,20 @@ public class ProductServiceIT {
 	@Autowired
 	private ProductRepository repository;
 
-	private Long existindId;
+	private Long existingId;
 	private Long nonExistingId;
 	private Long countTotalProducts;
 
 	@BeforeEach
 	void setUp() throws Exception {
-		existindId = 1L;
+		existingId = 1L;
 		nonExistingId = 1000L;
 		countTotalProducts = 25L;
 	}
 
 	@Test
 	public void deleteShouldDeleteResourceWhenIdExists() {
-		service.delete(existindId);
+		service.delete(existingId);
 		Assertions.assertEquals(countTotalProducts -1, repository.count());
 	}
 	
