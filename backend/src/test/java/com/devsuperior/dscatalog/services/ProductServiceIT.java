@@ -1,5 +1,8 @@
 package com.devsuperior.dscatalog.services;
 
+import com.devsuperior.dscatalog.dto.ProductDTO;
+import com.devsuperior.dscatalog.repositories.ProductRepository;
+import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,10 +12,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.devsuperior.dscatalog.dto.ProductDTO;
-import com.devsuperior.dscatalog.repositories.ProductRepository;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
 
 @SpringBootTest
 @Transactional
